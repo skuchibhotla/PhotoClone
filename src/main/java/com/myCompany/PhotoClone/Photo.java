@@ -1,5 +1,6 @@
 package com.myCompany.PhotoClone;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;
 
 public class Photo {
@@ -7,6 +8,19 @@ public class Photo {
 
     @NotEmpty
     private String fileName;
+
+    public String getContentType() {
+        return contentType;
+    }
+
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
+    }
+
+    private String contentType;
+
+    @JsonIgnore
+    private byte[] data;
 
     public String getId() {
         return id;
@@ -31,5 +45,13 @@ public class Photo {
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
+    }
+
+    public byte[] getData() {
+        return data;
+    }
+
+    public void setData(byte[] data) {
+        this.data = data;
     }
 }
