@@ -1,5 +1,6 @@
-package com.myCompany.PhotoClone;
+package com.myCompany.PhotoClone.service;
 
+import com.myCompany.PhotoClone.model.Photo;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;

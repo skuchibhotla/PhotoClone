@@ -1,5 +1,7 @@
-package com.myCompany.PhotoClone;
+package com.myCompany.PhotoClone.web;
 
+import com.myCompany.PhotoClone.model.Photo;
+import com.myCompany.PhotoClone.service.PhotoService;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
